@@ -25,6 +25,7 @@ export function renderCountryInfo(list, box) {
                 <p class="country-info___text">${Object.values(languages)}</p></li>
                 </ul>`
     ).join('');
+    
     return (box.innerHTML = createList);
 
 }
