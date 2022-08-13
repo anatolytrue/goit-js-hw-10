@@ -1,7 +1,7 @@
 
 import Notiflix from 'notiflix';
 
-export default function fetchCountries(name) {
+export function fetchCountries(name) {
     const filters = 'name,capital,population,flags,languages';
     const url = `https://restcountries.com/v3.1/name/${name}?fields=${filters}`;
     return fetch(url).then(response => {
